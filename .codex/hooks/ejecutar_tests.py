@@ -35,7 +35,7 @@ salida = resultado.stderr.strip()  # unittest escribe su reporte en stderr
 if resultado.returncode != 0:
     print(
         "❌ El hook ejecutó las pruebas después de tu cambio y FALLARON.\n"
-        "Revisa el error y corrige el código (las pruebas no se pueden modificar):\n\n"
+        "Revisa el error y corrige el código (las pruebas no se pueden modificar son fijas):\n\n"
         + salida[-3000:],
         file=sys.stderr,
     )
