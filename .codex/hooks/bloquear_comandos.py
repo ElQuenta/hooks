@@ -26,7 +26,7 @@ for patron, motivo in PELIGROSOS.items():
     if re.search(patron, comando, re.IGNORECASE):
         print(
             f"⛔ BLOQUEADO por hook: {motivo}.\nComando: {comando}\n"
-            "Si de verdad es necesario, pide al usuario que lo ejecute manualmente.",
+            "Si de verdad es necesario, pide al usuario que lo ejecute manualmente. Esto correra bajo su propio riesgo.",
             file=sys.stderr,
         )
         sys.exit(2)
